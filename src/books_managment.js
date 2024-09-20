@@ -29,9 +29,9 @@ let books = [
     copies: 5,
   },
   {
-    title: 'Майстер і Маргарита',
-    author: 'Михайло Булгаков',
-    publisher: 'АСТ',
+    title: 'Властелін Колець',
+    author: 'Джон Рональд Руэл Толкин',
+    publisher: 'HarperCollins',
     copies: 8,
   },
   {
