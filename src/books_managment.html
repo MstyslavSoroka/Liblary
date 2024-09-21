@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Managment</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+</head>
+
+<body class="books_managment">
+    <include src="./partials/header.html"></include>
+    <main>
+        <include src="partials/hero.html"></include>
+        <div class="page_container">
+            <h1 class="page_title">Books Managment</h1>
+            <div class="search_sort_container">
+                <div class="sort_books">
+                <label for="sort">Сортувати за</label>
+                <select id="sort" onchange="sortBooks()">
+                    <option value="title">Назва</option>
+                    <option value="author">Автор</option>
+                    <option value="copies">Кількість екземплярів</option>
+                </select>
+            </div>
+                <input class="search_books" type="text" placeholder="Пошук книги">
+                <button class="add_book_btn" data-action="open-modal"><span>Додати книгу</span></button>
+            </div>
+
+            <h2 class="book_list_title">Список книг:</h2>
+            <div id="book-list" class="book-list">
+                
+            </div>
+            
+            <div class="backdrop js-backdrop">
+                <div class="modal">
+                    
+                    <button type="button" class=" close_btn button close" data-action="close-modal">
+                        <span>
+                            ✕</span>
+                    </button>
+                    <div class="form_wrap">
+                    <form id="book-form">
+                        <label for="title">Назва книги:</label>
+                        <input type="text" id="title" required>
+                        
+                        <label for="author">Автор:</label>
+                        <input type="text" id="author" required>
+                        
+                        <label for="publisher">Видавництво:</label>
+                        <input type="text" id="publisher" required>
+                        
+                        <label for="copies">Кількість екземплярів:</label>
+                        <input type="number" id="copies" min="0" required>
+                        
+                        <button class="send_form_btn" type="submit"><span>Зберегти</span></button>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <include src="partials/footer.html"></include>
+    <script src="books_managment.js"></script>
+</body>
+
+</html>
