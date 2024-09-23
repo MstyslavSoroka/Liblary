@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Managment</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+</head>
+
+<body class="books_managment">
+    <include src="./partials/header.html"></include>
+    <main>
+        <include src="partials/hero.html"></include>
+        <div class="page_container">
+            <h1 class="page_title">Our Customers</h1>
+            <div class="search_sort_container">
+                <div class="sort_customers">
+                    <label for="sort">Сортувати за</label>
+                    <select id="sort" onchange="sortBooks()">
+                        <option value="name">Імя</option>
+                        <option value="number">Номер</option>
+                    </select>
+                </div>
+                <input class="search_customers" placeholder="Пошук відвідувачів">
+                <button class="add_customer_btn"  data-action="open-modal"><span>Додати користувача</span></button>
+            </div>
+
+            <h2 class="customers_list_title">Користувачі:</h2>
+            <div id="customers-list" class="customers-list">
+                
+            </div>
+            <div class="backdrop js-backdrop">
+                <div class="modal2">
+                    <div class="title_wrap">
+                    <h2 class="modal_title">Regestration</h2>
+                    <button type="button" class=" close_btn2  close" data-action="close-modal"> <span>✕</span></button>
+                   
+                    </button></div>
+                    <div class="customers_form_wrap">
+                        <form id="customers_form">
+                            <label for="title">Імя:</label>
+                            <input type="text" id="naem" required>
+                            
+                            <label for="author">Прізвище:</label>
+                            <input type="text" id="surname" required>
+                            
+                            <label for="publisher">Пароль:</label>
+                            <input type="password" id="password" required>
+                            
+                            <label for="copies">Номер телефону:</label>
+                            <input type="number" id="phone_num" min="0" required>
+                            
+                            <button class="send_form_btn" type="submit"><span>Зберегти</span></button>
+                          </form>
+                        </div>
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    <include src="partials/footer.html"></include>
+    <script src="customers.js"></script>
+</body>
