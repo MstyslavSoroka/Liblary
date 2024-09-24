@@ -1,2 +1,0 @@
-document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".add_customer_btn"),t=document.querySelector(".close"),o=document.querySelector(".js-backdrop");e.addEventListener("click",(function(){document.body.classList.add("show-modal")})),t.addEventListener("click",(function(){document.body.classList.remove("show-modal")})),o.addEventListener("click",(function(e){e.target===o&&document.body.classList.remove("show-modal")}))}));
-//# sourceMappingURL=customers.9ee3248f.js.map
