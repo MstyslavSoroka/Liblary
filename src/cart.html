@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/main.scss" />
+</head>
+<body>
+    <include src="./partials/header.html"></include>
+    <include src="partials/hero.html"></include>
+    <section class="cart" id="cart">
+        <h2 class="cart-title">Замовляйте та повертайте книги</h2>
+        <h2 class="cart-list-title">Книги в наявності:</h2>
+        <ul class="avialable-books-list">
+          <li class="avialable-list-item" data-book-id="1">
+            <h2 class="cart-book-title">Гаррі Поттер</h2>
+            <p class="cart-book-author">Дж. К. Роулінг.</p>
+            <p class="cart-exemplars-left">Лишилось примірників: 5</p>
+          </li>
+          <li class="avialable-list-item" data-book-id="2">
+            <h2 class="cart-book-title">Володар Перснів</h2>
+            <p class="cart-book-author">Дж. Р. Р. Толкін</p>
+            <p class="cart-exemplars-left">Лишилось примірників: 7</p>
+          </li>
+          <li class="avialable-list-item" data-book-id="3">
+            <h2 class="cart-book-title">1984</h2>
+            <p class="cart-book-author">Джордж Орвелл</p>
+            <p class="cart-exemplars-left">Лишилось примірників: 4</p>
+          </li>
+          <li class="avialable-list-item" data-book-id="4">
+            <h2 class="cart-book-title">Убити <br />пересмішника</h2>
+            <p class="cart-book-author">Харпер Лі</p>
+            <p class="cart-exemplars-left">Лишилось примірників: 9</p>
+          </li>
+        </ul>
+        <div class="manipulations-container">
+          <div class="give-book-container">
+            <h2 class="give-book-title">Видати книгу</h2>
+            <form id="issue-form">
+              <label for="book-select">Оберіть книгу:</label>
+              <select id="book-select"></select>
+              <button type="submit">Видати</button>
+            </form>
+          </div>
+          <div class="return-book-container">
+            <h2 class="return-book-title">Забрати книгу</h2>
+            <form id="return-form">
+              <label for="cart-id">Номер картки:</label>
+              <input type="number" id="cart-id" />
+              <button type="submit">Забрати</button>
+            </form>
+          </div>
+        </div>
+        <h2 class="taken-book-title">Ваші книги</h2>
+      </section>
+</body>
+<script src="cart.js"></script>
+<include src="partials/footer.html"></include>
+</html>

@@ -1,0 +1,31 @@
+
+  .cart {
+    background-color: #fff5db;
+    padding: 0 35px 0 35px;
+    padding-bottom: 50px;
+  }
+  .cart-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+  }
+  .avialable-books-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .avialable-list-item {
+    background-color: #fde9cb;
+    border: 1px solid #b88b4a;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px 0px 0px 5px;
+    margin-bottom: 50px;
+  }
+  .cart-book-title {
+    font-size: 20px;
+  }
+  .manipulations-container {
+    display: flex;
+    justify-content: space-between;
+  }
