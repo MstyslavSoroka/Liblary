@@ -86,7 +86,7 @@ document.getElementById('customers_form').addEventListener('submit', function (e
 
   const name = document.getElementById('name').value;
   const surname = document.getElementById('surname').value;
-  const password = document.getElementById('password').value;  // you might handle password storage differently in a real app
+  const password = document.getElementById('password').value;  
   const phone_num = document.getElementById('phone_num').value;
 
   customers.push({ name, surname, phone_num });
