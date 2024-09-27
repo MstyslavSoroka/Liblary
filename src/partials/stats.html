@@ -1,88 +1,210 @@
-<section class="stats" id="stats">
-  <h2 class="stats-title">
-    Переглядайте статистику книг <br />і найактивніших користувачів!
-  </h2>
-  <div class="stats-btn-div">
-    <button class="stats-btn">Переглянути 5 найпопулярніших книг</button>
-    <button class="stats-btn">Переглянути 5 найактивніших користувачів</button>
-  </div>
-  <div class="stats-books-div" id="statsBooksContainer">
-    <ul class="stats-div-list">
-      <li class="stats-list-item">
-        <div class="stats-item-box">
-          <img src="./images/daVinci-book.jpg" alt="daVinci code book" />
-          <h2 class="stats-book-title">Код да Вінчі (The Da Vinci Code)</h2>
-          <h3 class="stats-book-author">Ден Браун</h3>
-          <p class="stats-book-genre">Роман</p>
-          <div class="stats-rating-div">
-            <p class="stats-book-rating">
-              4.9 <span class="book-rating-span">★★★★</span>
-            </p>
+
+  <section class="stats" id="stats">
+    <h2 class="stats-title">
+      Переглядайте статистику книг <br />і найактивніших користувачів!
+    </h2>
+    <div class="stats-btn-div">
+      <button class="stats-btn" id="viewPopularBooks">
+        Переглянути 5 найпопулярніших книг
+      </button>
+      <button class="stats-btn" id="viewActiveUsers">
+        Переглянути 5 найактивніших користувачів
+      </button>
+    </div>
+    <div class="stats-books-div" id="statsBooksContainer">
+      <ul class="stats-div-list">
+        <li class="stats-list-item">
+          <div class="stats-item-box">
+            <div class="stats-img-container">
+              <img
+                class="stats-item-img"
+                src="./images/daVinci-book.jpg"
+                alt="daVinci code book"
+              />
+            </div>
+            <h2 class="stats-book-title">Код да Вінчі (The Da Vinci Code)</h2>
+            <h3 class="stats-book-author">Ден Браун</h3>
+            <p class="stats-book-genre">Роман</p>
+            <div class="stats-rating-div">
+              <p class="stats-book-rating">
+                4.9 <span class="book-rating-span">★★★★</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="stats-list-item">
-        <div class="stats-item-box">
-          <img src="./images/don-quijote-book.jpg" alt="daVinci code book" />
-          <h2 class="stats-book-title">Дон Кіхот (Don Quixote de La Mancha)</h2>
-          <h3 class="stats-book-author">Мігель де Сервантес</h3>
-          <p class="stats-book-genre">Роман</p>
-          <div class="stats-rating-div">
-            <p class="stats-book-rating">
-              3.9 <span class="book-rating-span">★★★</span>
-            </p>
+        </li>
+        <li class="stats-list-item">
+          <div class="stats-item-box">
+            <div class="stats-img-container">
+              <img
+                class="stats-item-img"
+                src="./images/don-quijote-book.jpg"
+                alt="daVinci code book"
+              />
+            </div>
+            <h2 class="stats-book-title">
+              Дон Кіхот (Don Quixote de La Mancha)
+            </h2>
+            <h3 class="stats-book-author">Мігель де Сервантес</h3>
+            <p class="stats-book-genre">Роман</p>
+            <div class="stats-rating-div">
+              <p class="stats-book-rating">
+                3.9 <span class="book-rating-span">★★★</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="stats-list-item">
-        <div class="stats-item-box">
-          <img
-            src="./images/lord-of-the-rings-book.jpg"
-            alt="daVinci code book"
-          />
-          <h2 class="stats-book-title">
-            Володар перснів (The Lord of the Rings»)
-          </h2>
-          <h3 class="stats-book-author">Дж. Р. Р. Толкін</h3>
-          <p class="stats-book-genre">Фентезі</p>
-          <div class="stats-rating-div">
-            <p class="stats-book-rating">
-              4.5 <span class="book-rating-span">★★★★</span>
-            </p>
+        </li>
+        <li class="stats-list-item">
+          <div class="stats-item-box">
+            <div class="stats-img-container">
+              <img
+                class="stats-item-img"
+                src="./images/lord-of-the-rings-book.jpg"
+                alt="daVinci code book"
+              />
+            </div>
+            <h2 class="stats-book-title">
+              Володар перснів (The Lord of the Rings»)
+            </h2>
+            <h3 class="stats-book-author">Дж. Р. Р. Толкін</h3>
+            <p class="stats-book-genre">Фентезі</p>
+            <div class="stats-rating-div">
+              <p class="stats-book-rating">
+                4.5 <span class="book-rating-span">★★★★</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="stats-list-item">
-        <div class="stats-item-box">
-          <img
-            src="./images/chronicles-of-narnia-book.jpg"
-            alt="daVinci code book"
-          />
-          <h2 class="stats-book-title">
-            Лев, Біла відьма та шафа (The Lion, the Witch and the Wardrobe)
-          </h2>
-          <h3 class="stats-book-author">Клайв Стейплз Льюїс</h3>
-          <p class="stats-book-genre">Роман</p>
-          <div class="stats-rating-div">
-            <p class="stats-book-rating">
-              4.6 <span class="book-rating-span">★★★★</span>
-            </p>
+        </li>
+        <li class="stats-list-item">
+          <div class="stats-item-box">
+            <div class="stats-img-container">
+              <img
+                class="stats-item-img"
+                src="./images/chronicles-of-narnia-book.jpg"
+                alt="daVinci code book"
+              />
+            </div>
+            <h2 class="stats-book-title">
+              Лев, Біла відьма та шафа (The Lion, the Witch and the Wardrobe)
+            </h2>
+            <h3 class="stats-book-author">Клайв Стейплз Льюїс</h3>
+            <p class="stats-book-genre">Роман</p>
+            <div class="stats-rating-div">
+              <p class="stats-book-rating">
+                4.6 <span class="book-rating-span">★★★★</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="stats-list-item">
-        <div class="stats-item-box">
-          <img src="./images/daVinci-book.jpg" alt="daVinci code book" />
-          <h2 class="stats-book-title">Код да Вінчі</h2>
-          <h3 class="stats-book-author">Ден Браун</h3>
-          <p class="stats-book-genre">Роман</p>
-          <div class="stats-rating-div">
-            <p class="stats-book-rating">
-              4.9 <span class="book-rating-span">★★★★</span>
-            </p>
+        </li>
+        <li class="stats-list-item">
+          <div class="stats-item-box">
+            <div class="stats-img-container">
+              <img
+                class="stats-item-img"
+                src="./images/harry-potter-book.jpg"
+                alt="daVinci code book"
+              />
+            </div>
+
+            <h2 class="stats-book-title">
+              Гаррі Поттер і філософський камінь (Harry Potter and the
+              Philosopher's Stone)
+            </h2>
+            <h3 class="stats-book-author">Дж. К. Роулінг.</h3>
+            <p class="stats-book-genre">Фентезі, пригоди</p>
+            <div class="stats-rating-div">
+              <p class="stats-book-rating">
+                4.5 <span class="book-rating-span">★★★★</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
+        </li>
+      </ul>
+    </div>
+    <div class="stats-users-div" id="statsUsersContainer">
+      <ul class="stats-users-list">
+        <li class="stats-users-item">
+          <div class="users-img-container">
+            <img
+              class="stats-users-img"
+              src="https://pngimg.com/uploads/thinking_man/thinking_man_PNG11606.png"
+              alt="User"
+              width="230px"
+              height="250px"
+            />
+          </div>
+          <div class="users-text-div">
+            <h2 class="stats-users-name">Олег Яремчук</h2>
+            <p class="stats-users-date">З нами від 2018</p>
+            <p class="stats-users-books">Куплено 23 книги</p>
+          </div>
+        </li>
+        <li class="stats-users-item">
+          <div class="users-img-container">
+            <img
+              class="stats-users-img"
+              src="https://static.vecteezy.com/system/resources/thumbnails/024/558/279/small_2x/business-woman-isolated-illustration-ai-generative-free-png.png"
+              alt="User"
+              width="260px"
+              height="250px"
+            />
+          </div>
+          <div class="users-text-div">
+            <h2 class="stats-users-name">Анна Худяк</h2>
+            <p class="stats-users-date">З нами від 2017</p>
+            <p class="stats-users-books">Куплено 26 книги</p>
+          </div>
+        </li>
+        <li class="stats-users-item">
+          <div class="users-img-container">
+            <img
+              class="stats-users-img"
+              src="
+              https://png.pngtree.com/png-clipart/20231006/ourmid/pngtree-handsome-businessman-transparent-background-png-image_10194933.png"
+              alt="User"
+              width="280px"
+              height="250px"
+            />
+          </div>
+          <div class="users-text-div">
+            <h2 class="stats-users-name">Тарас Коваль</h2>
+            <p class="stats-users-date">З нами від 2019</p>
+            <p class="stats-users-books">Куплено 21 книги</p>
+          </div>
+        </li>
+        <li class="stats-users-item">
+          <div class="users-img-container">
+            <img
+              class="stats-users-img"
+              src="https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-man-in-shirt-smiles-and-gives-thumbs-up-to-show-approval-png-image_10094381.png"
+              alt="User"
+              width="290px"
+              height="250px"
+            />
+          </div>
+          <div class="users-text-div">
+            <h2 class="stats-users-name">Степан Кошовський</h2>
+            <p class="stats-users-date">З нами від 2019</p>
+            <p class="stats-users-books">Куплено 19 книги</p>
+          </div>
+        </li>
+        <li class="stats-users-item">
+          <div class="users-img-container">
+            <img
+              class="stats-users-img"
+              src="https://static.vecteezy.com/system/resources/thumbnails/029/284/491/small_2x/cheerful-brunette-business-woman-isolated-png.png"
+              alt="User"
+              width="290px"
+              height="250px"
+            />
+          </div>
+          <div class="users-text-div">
+            <h2 class="stats-users-name">Ольга Корчак</h2>
+            <p class="stats-users-date">З нами від 2018</p>
+            <p class="stats-users-books">Куплено 20 книги</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script src="index.js"></script>
+  
