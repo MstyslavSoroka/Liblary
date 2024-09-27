@@ -24,7 +24,7 @@
     border: none;
     background-color: #000000;
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px; 
 }
 
 
@@ -121,4 +121,51 @@ body.show-modal .modal {
     border-radius: 25px;
     background-color: #faedcd;
     text-align: center;
+}
+
+
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.customer-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .customer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  .customer-card p {
+    margin: 8px 0;
+  }
+  
+  .customer-card button {
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  
+  .customer-card button:hover {
+    transform: scale(1.2);
+    transition: ease-in-out, 0.2s;
+  }
+
+
+.customer-card button:hover span {
+    color: #d4a373;
 }
