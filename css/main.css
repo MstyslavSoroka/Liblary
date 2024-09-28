@@ -537,7 +537,6 @@ ul {
 
 .stats {
   background-color: #fff5db;
-  padding: 0 20px 0 20px;
 }
 
 .stats-title {
@@ -602,6 +601,8 @@ ul {
 /* ============= */
 .stats-users-div {
   margin-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 55px;
   display: none;
 }
 
@@ -657,8 +658,9 @@ ul {
   border: 1px solid #b88b4a;
   border-radius: 20px;
   width: 200px;
-  padding: 5px 0px 0px 5px;
+  padding: 15px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .cart-book-title {
@@ -668,4 +670,21 @@ ul {
 .manipulations-container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.taken-books-list {
+  padding-top: 20px;
+}
+
+.taken-books-list li {
+  background-color: #fde9cb;
+  margin-bottom: 10px;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.give-book-title {
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

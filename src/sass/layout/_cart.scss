@@ -19,8 +19,9 @@
     border: 1px solid #b88b4a;
     border-radius: 20px;
     width: 200px;
-    padding: 5px 0px 0px 5px;
+    padding: 15px;
     margin-bottom: 50px;
+    margin-top: 50px;
   }
   .cart-book-title {
     font-size: 20px;
@@ -28,4 +29,23 @@
   .manipulations-container {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10px;
+  }
+
+
+.taken-books-list {
+  padding-top: 20px;
+}
+
+  .taken-books-list li {
+    background-color: #fde9cb;
+    margin-bottom: 10px;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+
+  .give-book-title {
+    padding-bottom: 10px;
   }
