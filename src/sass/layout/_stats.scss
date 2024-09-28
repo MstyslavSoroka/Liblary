@@ -4,7 +4,7 @@ ul {
   
   .stats {
     background-color: #fff5db;
-    padding: 0 20px 0 20px;
+    
   }
   .stats-title {
     font-size: 40px;
@@ -60,6 +60,8 @@ ul {
   /* ============= */
   .stats-users-div {
     margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 55px;
     display: none;
   }
   .stats-users-list {

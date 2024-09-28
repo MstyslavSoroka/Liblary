@@ -68,6 +68,11 @@ const library = [
     const list =
       document.querySelector(".taken-book-title + ul") ||
       document.createElement("ul");
+      
+      if (!document.querySelector(".taken-book-title + ul")) {
+        list.classList.add("taken-books-list"); 
+      }
+
     list.innerHTML = "";
     takenBooks.forEach((b) => {
       const item = document.createElement("li");
